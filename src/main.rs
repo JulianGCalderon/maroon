@@ -60,6 +60,13 @@ fn replace_output(captures: &Captures) -> String {
     };
     let output = output.trim_end();
 
+    let output = output
+        .lines()
+        .into_iter()
+        .map(|line| line.trim_end())
+        .collect::<Vec<_>>()
+        .join("\n");
+
     return format!(
         "```sh run\n\
         > {command}\n\
