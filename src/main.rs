@@ -26,8 +26,8 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     let regex = Regex::new(
         "```sh run\n\
-        > (.*?)\n\
-        .*?\n\
+        > (.*)\n\
+        (?:[\\S\\s]*?\n)?\
         ```",
     )
     .expect("regex should be valid");
