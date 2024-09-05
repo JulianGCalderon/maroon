@@ -15,6 +15,15 @@ Hello World!
 To learn about the Maroon, run
 ```sh run
 > maroon --help
+Usage: maroon [OPTIONS] <PATH>
+
+Arguments:
+  <PATH>
+
+Options:
+  -i, --inplace
+  -h, --help     Print help
+  -V, --version  Print version
 ```
 
 To execute a markdown file, run:
