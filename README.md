@@ -1,3 +1,5 @@
+# Maroon
+
 A code block runner for markdown. Allows for documentation to stay up to date.
 
 ## Syntax
